@@ -1,4 +1,4 @@
-8732936348087<!>/content/scripts/login.js<!>0<!>6931<!>0<!><!bool><!><div class="box_x_button box_x_tabs" onclick="curBox().hide()" aria-label="Закрыть" tabindex="0" role="button"></div>
+<!>/content/scripts/login.js<!>0<!>6931<!>0<!><!bool><!><div class="box_x_button box_x_tabs" onclick="curBox().hide()" aria-label="Закрыть" tabindex="0" role="button"></div>
 <div class="login_user_name">Войти в другой аккаунт</div>
 <div id="login_form_wrap" class="login_form_wrap login_box_form_wrap">
   <form method="post" name="login" id="login_form" action="vklogin">
