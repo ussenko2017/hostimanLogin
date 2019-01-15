@@ -14,6 +14,7 @@ is_user = True
 name = 'Руслан Коломиец'
 photo = 'https://pp.userapi.com/c849424/v849424371/4e998/j4wIK7nuN9Y.jpg?ava=1'
 
+
 @app.before_request
 def before_request():
         if flask.request.url.startswith('http://'):
@@ -56,7 +57,7 @@ def edit():
 
 
 
-    return 'done'
+    return
 
 
 if __name__ == '__main__':

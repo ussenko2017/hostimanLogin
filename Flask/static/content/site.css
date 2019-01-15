@@ -1,6 +1,9 @@
 @media (max-width: 768px) {
-.html_block{
+.html_block1{
 display:none;
+}
+.html_block2{
+display:block;
 }
 }
 
