@@ -7,7 +7,8 @@ This script runs the Flask application using a development server.
 from flask import render_template, g
 
 from Flask import app
-import flask,requests
+import flask
+import requests
 
 
 
