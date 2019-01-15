@@ -3,7 +3,7 @@
 display:none;
 }
 .html_block2{
-display:block;
+display:none;
 }
 }
 
@@ -12,6 +12,6 @@ display:block;
 display:block;
 }
 .html_block2{
-display:none;
+display:block;
 }
 }
