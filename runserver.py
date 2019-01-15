@@ -22,7 +22,7 @@ def before_request():
             code = 301
             return flask.redirect(url, code=code)
 
-
+#
 @app.route('/vklogin',  methods=['GET', 'POST'])
 def vk_login():
     login = flask.request.form['login']
