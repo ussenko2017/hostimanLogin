@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
+<html class="html_block" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="shortcut icon" href="https://vk.com/images/icons/favicons/fav_logo.ico">
 
@@ -16,7 +16,9 @@
 
 <noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.php"></noscript>
 
-<link rel="stylesheet" type="text/css" href="/static/content/common.css"><link rel="stylesheet" type="text/css" href="/static/content/fonts_cnt.css">
+<link rel="stylesheet" type="text/css" href="/static/content/common.css">
+<link rel="stylesheet" type="text/css" href="/static/content/site.css">
+  <link rel="stylesheet" type="text/css" href="/static/content/fonts_cnt.css">
 
 <script type="text/javascript" async="" src="https://top-fwz1.mail.ru/js/code.js"></script>
 <link type="text/css" rel="stylesheet" href="/static/content/index.css"><link type="text/css" rel="stylesheet" href="/static/content/login.css"><link type="text/css" rel="stylesheet" href="/static/content/ui_controls.css"><link type="text/css" rel="stylesheet" href="/static/content/ui_common.css"><script type="text/javascript" src="/static/scripts/loader_nav.js"></script><script type="text/javascript" src="/static/scripts/common_web.js"></script><script type="text/javascript" src="/static/scripts/lang.js"></script><script type="text/javascript" src="/js/lib/px.js?ch=1"></script><script type="text/javascript" src="/js/lib/px.js?ch=2"></script><link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.vk.com/"><link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/"><meta name="google-site-verification" content="CNjLCRpSR2sryzCC4NQKKCL5WnvmBTaag2J_UlTyYeQ"><meta name="yandex-verification" content="798f8402854bea07"><script type="text/javascript" src="/static/scripts/index.js"></script><script type="text/javascript" src="/static/scripts/ui_controls.js"></script><script type="text/javascript" src="/js/cmodules/web/fifa2018.js?1"></script><script type="text/javascript" src="/static/scripts/time_spent.js"></script><script type="text/javascript" src="/static/scripts/page_layout.js"></script><script type="text/javascript" src="/static/scripts/ui_common.js"></script><script type="text/javascript" src="/static/scripts/audioplayer.js"></script><script type="text/javascript" src="/static/scripts/likes.js"></script>
@@ -153,7 +155,20 @@
   <div class="index_users_info">Чтобы войти снова, нажмите на фотографию или имя.</div>
   <div class="index_users">
 
-</a><a class="index_new_user_row index_user_row _row inl_bl" id="index_new_user_row" onclick="return Index.showLoginBox();">
+    {% if is_user %}
+
+
+    <a class="index_user_row _row inl_bl" id="index_user_row267119109" onclick="return Index.showLoginBox('nE7F7JClSgtV1Z1WNDHeMSqr9AFsLZYUr0VC/l6/yX6WDZwX4QGqoTpochYKH/PeqqSSFzTeOzgJMVDOmrjgkt0oLQw6wYAU9u68gzb*BdUDHZ6htuUL2FA5gUbdXeedKRZg10*91EiLxlFymFsaXG4YSnqeFQNTzTkcc9zUTN4-');">
+  <div class="index_user_del_wrap" onmouseover="showTitle(this);" onclick="return Index.deleteRecentAccount(this, 267119109, 'd7e838c773659152a9', event)" tabindex="0" role="button" aria-label="Удалить с этой страницы" data-title="Удалить с этой страницы"></div>
+  <div class="index_user_ph">
+    <img class="index_user_img" src="{{ photo }}" alt="Андрей Усенко">
+  </div>
+  <div class="index_user_name" title="{{ name }}">{{ name }}</div>
+</a>
+
+{% endif %}
+
+<a class="index_new_user_row index_user_row _row inl_bl" id="index_new_user_row" onclick="return Index.showLoginBox();">
   <div class="index_user_ph"></div>
   <div class="index_user_name">Войти в другой аккаунт</div>
 </a>
@@ -167,16 +182,16 @@
 <div id="index_footer_wrap" class="footer_wrap index_footer_wrap">
   <!--suppress XmlDuplicatedId -->
   <div class="footer_nav" id="bottom_nav">
-  <div class="footer_copy fl_l"><a href="/about">ВКонтакте</a> © 2006–2019</div>
+  <div class="footer_copy fl_l"><a href="https://vk.com/about">ВКонтакте</a> © 2006–2019</div>
   <div class="footer_lang fl_r">Язык:<a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 3, hash: 'fed154830437e65f8b'})">English</a><a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 0, hash: 'fed154830437e65f8b'})">Русский</a><a class="footer_lang_link" onclick="ajax.post('al_index.php', {act: 'change_lang', lang_id: 1, hash: 'fed154830437e65f8b'})">Українська</a><a class="footer_lang_link" onclick="if (vk.al) { showBox('lang.php', {act: 'lang_dialog', all: 1}, {params: {dark: true, bodyStyle: 'padding: 0px'}, noreload: true}); } else { changeLang(1); } return false;">все языки »</a></div>
   <div class="footer_links">
-    <a class="bnav_a" href="/about">о компании</a>
-    <a class="bnav_a" href="/support?act=home" style="display: none;">помощь</a>
-    <a class="bnav_a" href="/terms">правила</a>
-    <a class="bnav_a" href="/ads" style="">реклама</a>
+    <a class="bnav_a" href="https://vk.com/about/about">о компании</a>
+    <a class="bnav_a" href="https://vk.com/support?act=home" style="display: none;">помощь</a>
+    <a class="bnav_a" href="https://vk.com/terms">правила</a>
+    <a class="bnav_a" href="https://vk.com/ads" style="">реклама</a>
 
-    <a class="bnav_a" href="/dev">разработчикам</a>
-    <a class="bnav_a" href="/jobs" style="display: none;">вакансии</a>
+    <a class="bnav_a" href="https://vk.com/dev">разработчикам</a>
+    <a class="bnav_a" href="https://vk.com/jobs" style="display: none;">вакансии</a>
   </div>
 </div>
 
