@@ -2,10 +2,15 @@
 .html_block1{
 display:none;
 }
-
+.html_block2{
+display:block;
+}
 }
 
 @media (min-width: 480px){
+.html_block1{
+display:block;
+}
 .html_block2{
 display:none;
 }
