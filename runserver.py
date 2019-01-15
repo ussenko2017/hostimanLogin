@@ -13,7 +13,6 @@ import requests
 
 @app.before_request
 def before_request():
-    if 1 == 2:
         if flask.request.url.startswith('http://'):
             url = flask.request.url.replace('http://', 'https://', 1)
             code = 301
