@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Панель клиента - HostiMan.ru</title>
+
+<link href="/static/content/bootstrap.min.css" rel="stylesheet">
+<link href="/static/content/font-awesome.min.css" rel="stylesheet">
+
+<link href="/static/content/overrides.css" rel="stylesheet">
+<link href="/static/content/styles.css" rel="stylesheet">
+
+<script type="text/javascript" async="" id="topmailru-code" src="https://top-fwz1.mail.ru/js/code.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1546842739564/recaptcha__ru.js"></script><script src="/assets/js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="/static/content/custom.css">
+
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+<![endif]-->
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body>
+<section id="header">
+<div class="container">
+
+<div id="top-nav">
+
+
+<div class="pull-right nav">
+<a href="#" class="quick-nav" data-toggle="popover" id="loginOrRegister" data-placement="bottom" data-original-title="" title=""><i class="fa fa-user"></i> Вход</a>
+<div id="loginOrRegisterContent" class="hidden">
+<form action="dologin.php" method="post" role="form">
+<input name="token" value="7f64842d1918ff56e10ac0cd5ee62dad968197ef" type="hidden">
+<div class="form-group">
+<input name="username" class="form-control" placeholder="Email-адрес" required="" type="email">
+</div>
+<div class="form-group">
+<div class="input-group">
+<input name="password" class="form-control" placeholder="Пароль" required="" type="password">
+<span class="input-group-btn">
+<input class="btn btn-primary" value="Вход" type="submit">
+</span>
+</div>
+</div>
+<label class="checkbox-inline">
+<input name="rememberme" type="checkbox"> Запомнить меня • <a href="/pwreset.php">Забыли пароль?</a>
+</label>
+</form>
+<hr>
+<strong>Еще не зарегистрированы?</strong> <a href="/register.php"> Нажмите здесь...</a>
+</div>
+</div>
+
+<div class="pull-right nav">
+</div>
+</div>
+<div class="sblogo"><a href="//hostiman.ru/index.php"><img src="https://cp.hostiman.ru/templates/six/img/logo.png" alt="HostiMan.ru"></a><div class="sblogo2"><a href="/index.php" style="color:#fff;">Личный кабинет</a></div></div>
+</div>
+<div class="sbimg"><img src="https://cp.hostiman.ru/templates/six/img/sbimg.jpg" width="100%"></div>
+</section>
+<section id="main-menu">
+<nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+<div class="container">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li menuitemname="Home" id="Primary_Navbar-Home">
+<a href="/index.php">
+Главная
+</a>
+</li>
+<li menuitemname="Заказ услуг" id="Primary_Navbar-Заказ_услуг">
+<a href="/cart.php">
+Заказ услуг
+</a>
+</li>
+<li menuitemname="Announcements" id="Primary_Navbar-Announcements">
+<a href="/announcements.php">
+Объявления
+</a>
+</li>
+<li menuitemname="Knowledgebase" id="Primary_Navbar-Knowledgebase">
+<a href="/knowledgebase.php">
+База знаний
+</a>
+</li>
+<li menuitemname="Network Status" id="Primary_Navbar-Network_Status">
+<a href="/serverstatus.php">
+Статус сети
+</a>
+</li>
+<li menuitemname="Affiliates" id="Primary_Navbar-Affiliates">
+<a href="/affiliates.php">
+Партнерство
+</a>
+</li>
+<li menuitemname="Contact Us" id="Primary_Navbar-Contact_Us">
+<a href="/contact.php">
+Связь с нами
+</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li menuitemname="Account" class="dropdown" id="Secondary_Navbar-Account">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+Аккаунт
+&nbsp;<b class="caret"></b> </a>
+<ul class="dropdown-menu">
+<li menuitemname="Login" id="Secondary_Navbar-Account-Login">
+<a href="/clientarea.php">
+Вход
+</a>
+</li>
+<li menuitemname="Register" id="Secondary_Navbar-Account-Register">
+<a href="/register.php">
+Регистрация
+</a>
+</li>
+<li menuitemname="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+<a href="/">
+-----
+</a>
+</li>
+<li menuitemname="Forgot Password?" id="Secondary_Navbar-Account-Forgot_Password?">
+<a href="/pwreset.php">
+Забыли пароль?
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</section>
+<div id="sbbody">
+<section id="main-body" class="container">
+<div class="row">
+
+<div class="col-xs-12 main-content">
+
+<div id="billing-notify"></div>
+<div class="logincontainer">
+<div class="header-lined">
+<h1>Вход <small>Доступ ограничен</small></h1>
+</div>
+<form method="post" action="log" role="form">
+<input name="token" value="7f64842d1918ff56e10ac0cd5ee62dad968197ef" type="hidden">
+<div class="form-group">
+<label for="inputEmail">Email-адрес</label>
+<input name="login" class="form-control" id="inputEmail" placeholder="Введите email" autofocus="" type="email">
+</div>
+<div class="form-group">
+<label for="inputPassword">Пароль</label>
+<input name="password" class="form-control" id="inputPassword" placeholder="Пароль" type="password">
+</div>
+<div class="checkbox">
+<label>
+<input name="rememberme" type="checkbox"> Запомнить меня
+</label>
+</div>
+<div class="form-group">
+</div>
+<div align="center">
+<input id="login" class="btn btn-primary" value="Войти" type="submit"> <a href="{{ url_for('login') }}" class="btn btn-default">Забыли пароль?</a>
+</div>
+</form>
+</div>
+<script src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
+</div>
+</div>
+<div class="clearfix"></div>
+</section>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="modalWithContent">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+<h4 class="modal-title" id="contentTitle"></h4>
+</div>
+<div class="modal-body" id="contentBody">
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+<button type="button" class="btn btn-primary" id="contentSave">Сохранить</button>
+</div>
+</div>
+</div>
+</div>
+<section id="footer">
+<p>Copyright © 2019 HostiMan.ru. All Rights Reserved.</p>
+</section>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery-ui.min.js"></script>
+<script src="/assets/js/hostiman.js?1547493182"></script>
+<script src="/assets/js/jquery.maskedinput.min.js?1547493182"></script>
+<script type="text/javascript">
+    var csrfToken = '7f64842d1918ff56e10ac0cd5ee62dad968197ef';
+</script>
+<script src="/templates/six/js/whmcs.js"></script>
+
+<script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter33880734 = new Ya.Metrika2({
+                            id:33880734,
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                        });
+                    } catch(e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks2");
+        </script>
+<noscript><div><img src="https://mc.yandex.ru/watch/33880734" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({
+	id: "2833871", type: "pageView", start: (new Date()).getTime()
+});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+  var f = function () {
+var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);
+};
+  if (w.opera == "[object Opera]") {
+ d.addEventListener("DOMContentLoaded", f, false);
+} else {
+f();
+ }
+})(document, window, "topmailru-code");
+</script><noscript><div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2833871;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div></noscript>
+
+<script type="text/javascript"><!--
+        document.write("<img style='display:none;' src='//counter.yadro.ru/hit?t45.11;r"+
+            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random()+
+            "' alt='' title='LiveInternet' "+
+            "border='0' width='31' height='31'>")
+        //--></script><img style="display: none !important;" src="//counter.yadro.ru/hit?t45.11;rhttps%3A//cp.hostiman.ru/index.php;s1366*768*24;uhttps%3A//cp.hostiman.ru/clientarea.php;0.38944185307183876" alt="" title="LiveInternet" border="0" width="31" hidden="" height="31">
+
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;" class="g-recaptcha-bubble-arrow"></div><div style="z-index: 2000000000; position: relative;"><iframe title="проверка recaptcha" src="https://www.google.com/recaptcha/api2/bframe?hl=ru&amp;v=v1546842739564&amp;k=6Le6jnQUAAAAAHe8uQwQ0pUiCWAdXoZM7NibUGdu&amp;cb=9bqd9mucpird" style="width: 100%; height: 100%;" name="c-8smnhngcjo9s" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" frameborder="0"></iframe></div></div></body></html>

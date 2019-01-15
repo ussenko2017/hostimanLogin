@@ -1,0 +1,11 @@
+/* *****************************************************
+
+    ** Custom Stylesheet **
+
+    Any custom styling you want to apply should be
+    defined here.
+
+***************************************************** */
+.has-error {
+    border: 1px solid red !important;
+}
